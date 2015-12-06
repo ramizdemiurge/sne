@@ -38,6 +38,7 @@ public class Splashframe{
         new JLabel("", new ImageIcon(MFrame.class.getResource("/meta/morphosis/img/SSE_logo.gif")), SwingConstants.CENTER));
         window.setBounds(500, 150, 402, 302);
         window.setLocationRelativeTo(null);
+        window.setAlwaysOnTop(true);
         window.setVisible(true);
         try {
             Thread.sleep(a);

@@ -1,5 +1,5 @@
 package meta.morphosis;
-
+import meta.morphosis.UpdateNotClass.Updater;
 /**
  * 
  * @author metamorphosis (meta++)
@@ -28,13 +28,14 @@ package meta.morphosis;
 
 public class Main 
 {
-
+	static Updater thread_1; //Update notifier class.
 	public static void main(String[] args) 
 	{
 		try 
 		{
 			meta.morphosis.frames.Splashframe.main(2500);
 			System.out.println("Version: "+metodlar.getVersion()+"\nAuthor: "+metodlar.getAuthor()+".");
+			thread_1 = new Updater();thread_1.start();
 			
 		}
 		catch(Exception sse) {

@@ -27,29 +27,14 @@ package meta.morphosis.frames;
  */
 //import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-//import javax.swing.JPanel;
-//import javax.swing.border.EmptyBorder;
-
 import meta.morphosis.metodlar;
-
 import javax.swing.JTextField;
-//import javax.swing.JButton;
 import java.awt.Color;
-//import javax.swing.JToolBar;
-//import javax.swing.JTabbedPane;
-//import javax.swing.JScrollPane;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
-//import javax.swing.JPopupMenu;
-//import java.awt.Component;
-//import java.awt.event.MouseAdapter;
-//import java.awt.event.MouseEvent;
-//import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
@@ -59,32 +44,20 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.Font;
 import java.awt.Toolkit;
-//import javax.swing.BoxLayout;
-//import javax.swing.GroupLayout;
-//import javax.swing.GroupLayout.Alignment;
-//import java.awt.Window.Type;
 import javax.swing.JLabel;
-//import javax.swing.DropMode;
 import javax.swing.SwingConstants;
-
 import javax.swing.JPanel;
 import javax.swing.border.EtchedBorder;
-
 import javax.swing.JRadioButtonMenuItem;
-import java.awt.Choice;
-import javax.swing.JList;
-import javax.swing.JEditorPane;
-import javax.swing.JSpinner;
-import javax.swing.JSeparator;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
-import javax.swing.JButton;
-import javax.swing.JTextArea;
-import java.awt.GridBagLayout;
 import java.awt.TextArea;
 import javax.swing.JTextPane;
-import java.awt.SystemColor;
-import javax.swing.UIManager;
+import javax.swing.JScrollBar;
+import javax.swing.JList;
+import javax.swing.JSpinner;
+import javax.swing.JTextArea;
+
 
 
 public class MFrame extends JFrame {
@@ -121,6 +94,7 @@ public class MFrame extends JFrame {
 	 * Create the frame.
 	 */
 	public MFrame() {
+		
 		getContentPane().setBackground(new Color(235, 235, 235));
 		//getContentPane().setBackground(UIManager.getColor("Button.highlight"));
 		setResizable(false);
@@ -133,7 +107,7 @@ public class MFrame extends JFrame {
 		 * setBounds(100, 100, 387, 470);
 		 * 
 		 */
-		setBounds(100, 100, 387, 470);
+		setBounds(100, 100, 757, 470);
 		setLocationRelativeTo(null);
 		
 		JMenuBar menuBar = new JMenuBar();
@@ -172,15 +146,15 @@ public class MFrame extends JFrame {
 		mnMode.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		menuBar.add(mnMode);
 		JRadioButtonMenuItem rdbtnmntmBig = new JRadioButtonMenuItem("Big");
+		rdbtnmntmBig.setSelected(true);
 		rdbtnmntmBig.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		JRadioButtonMenuItem rdbtnmntmMinimal = new JRadioButtonMenuItem("Minimal");
 		rdbtnmntmMinimal.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		rdbtnmntmMinimal.setSelected(true);
 		
 		rdbtnmntmMinimal.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setBounds(100, 100, 387, 470);
-				setLocationRelativeTo(null);
+				//setLocationRelativeTo(null);
 				rdbtnmntmBig.setSelected(false);
 			}
 		});
@@ -190,7 +164,7 @@ public class MFrame extends JFrame {
 		rdbtnmntmBig.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				setBounds(100, 100, 757, 470);
-				setLocationRelativeTo(null);
+				//setLocationRelativeTo(null);
 				rdbtnmntmMinimal.setSelected(false);
 			}
 		});
@@ -425,10 +399,7 @@ public class MFrame extends JFrame {
 		panel_1.setBackground(Color.WHITE);
 		panel_1.setBounds(381, 11, 361, 203);
 		getContentPane().add(panel_1);
-		TextArea textArea = new TextArea();
-		textArea.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		textArea.setBounds(78, 82, 250, 112);
-		panel_1.add(textArea);
+		JTextArea txtrFghfghfghfghfhFghfghfghfghfhFghfghfghfghfh = new JTextArea();
 		textField = new JTextField();
 		textField.addKeyListener(new KeyAdapter() {
 			@Override
@@ -437,7 +408,7 @@ public class MFrame extends JFrame {
 				
 				
 				
-				textArea.setText(meta.morphosis.metodlar.Do_decBase64(s));
+				txtrFghfghfghfghfhFghfghfghfghfhFghfghfghfghfh.setText(meta.morphosis.metodlar.Do_decBase64(s));
 				
 				
 			}
@@ -454,7 +425,7 @@ public class MFrame extends JFrame {
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Base64_decode", "Anything else"}));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Base64_decode"}));
 		comboBox.setBounds(218, 56, 110, 20);
 		panel_1.add(comboBox);
 		
@@ -466,5 +437,11 @@ public class MFrame extends JFrame {
 		panel_2.setBounds(381, 225, 361, 187);
 		getContentPane().add(panel_2);
 		panel_2.setLayout(null);
+		
+		
+		txtrFghfghfghfghfhFghfghfghfghfhFghfghfghfghfh.setFont(new Font("Monospaced", Font.PLAIN, 12));
+		txtrFghfghfghfghfhFghfghfghfghfhFghfghfghfghfh.setLineWrap(true);
+		txtrFghfghfghfghfhFghfghfghfghfhFghfghfghfghfh.setBounds(10, 11, 341, 165);
+		panel_2.add(txtrFghfghfghfghfhFghfghfghfghfhFghfghfghfghfh);
 	}
 }

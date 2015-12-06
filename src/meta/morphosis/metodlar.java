@@ -26,7 +26,7 @@ package meta.morphosis;
  */
 public class metodlar 
 {
-	private static final String version = "1.0.0.0";
+	private static final String version = "1.1.0.0";
 	private static final String author = "Ramiz Abdullayev :: metamorphosis (meta++)";
 	
 	

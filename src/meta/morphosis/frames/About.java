@@ -3,6 +3,7 @@ package meta.morphosis.frames;
 /**
  * About.java - about frame
  * @author metamorphosis (meta++)
+ * @author Ramiz Abdullayev
  * @version 1.0.0.0
  * https://github.com/metaplusplus/sse
  * 
@@ -39,15 +40,15 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.Font;
-import javax.swing.border.BevelBorder;
-import javax.swing.border.CompoundBorder;
-import javax.swing.border.TitledBorder;
-import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.LineBorder;
 import java.awt.Toolkit;
 
 public class About extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2007698158620047844L;
 	private JPanel contentPane;
 
 	/**
@@ -74,8 +75,9 @@ public class About extends JFrame {
 		setTitle("About Super Simple Encoder");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 350, 200);
+		setBounds(100, 100, 411, 200);
 		setLocationRelativeTo(null);
+		setAlwaysOnTop(true);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -84,7 +86,7 @@ public class About extends JFrame {
 		JPanel panel = new JPanel();
 		panel.setBorder(new LineBorder(new Color(0, 0, 0)));
 		panel.setBackground(Color.WHITE);
-		panel.setBounds(14, 16, 316, 104);
+		panel.setBounds(14, 16, 381, 104);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
@@ -96,27 +98,28 @@ public class About extends JFrame {
 		JLabel lblSuperSimpleEncoder = new JLabel("Super Simple Encoder");
 		lblSuperSimpleEncoder.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblSuperSimpleEncoder.setHorizontalAlignment(SwingConstants.CENTER);
-		lblSuperSimpleEncoder.setBounds(105, 12, 166, 23);
+		lblSuperSimpleEncoder.setBounds(105, 12, 266, 23);
 		panel.add(lblSuperSimpleEncoder);
 		
-		JLabel lblVersion = new JLabel("SSE-CORE     version 1.0.0.0");
+		JLabel lblVersion = new JLabel("SSE-CORE     "+meta.morphosis.metodlar.getVersion());
 		lblVersion.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		lblVersion.setBounds(130, 40, 166, 14);
+		lblVersion.setBounds(130, 40, 241, 14);
 		panel.add(lblVersion);
 		
 		JLabel lblNewLabel = new JLabel("Copyright \u00A9 2015  Ramiz A. [meta++]");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		lblNewLabel.setBounds(114, 85, 202, 14);
+		lblNewLabel.setBounds(114, 85, 257, 14);
 		panel.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("SSE-GUI        version 1.5.0.0");
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		lblNewLabel_1.setBounds(130, 55, 141, 14);
+		lblNewLabel_1.setBounds(130, 55, 241, 14);
 		panel.add(lblNewLabel_1);
 		
 		JLabel lblUsingApacheCommons = new JLabel("*Using Apache Commons Codec");
 		lblUsingApacheCommons.setFont(new Font("Tahoma", Font.PLAIN, 9));
-		lblUsingApacheCommons.setBounds(130, 70, 166, 14);
+		lblUsingApacheCommons.setBounds(130, 70, 241, 14);
 		panel.add(lblUsingApacheCommons);
 		
 		JButton btnNewButton = new JButton("Ok");
@@ -129,7 +132,7 @@ public class About extends JFrame {
 				
 			}
 		});
-		btnNewButton.setBounds(134, 138, 71, 23);
+		btnNewButton.setBounds(166, 138, 71, 23);
 		contentPane.add(btnNewButton);
 	}
 }
