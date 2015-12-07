@@ -1,5 +1,5 @@
 # INFO
-Super Simple Encoder - md5, md2, sha1, base64...
+Simple Nuclear Encoder - md5, md2, sha1, base64...
 
 #DISCLAIMER
 
@@ -7,7 +7,7 @@ I, Ramiz A. (meta++), am not responsible for how you use this tool. This tool is
 
 # HOW TO RUN ON WINDOWS, LINUX or MACOS
 
-Download JAR file (sse/JARs/*). Requires JVM.
+Download JAR or EXE file (sse/EXE+JAR/*). Requires JVM.
 
 # LICENSE
 
