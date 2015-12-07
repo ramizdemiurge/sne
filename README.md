@@ -7,7 +7,7 @@ I, Ramiz A. (meta++), am not responsible for how you use this tool. This tool is
 
 # HOW TO RUN ON WINDOWS, LINUX or MACOS
 
-Download JAR or EXE file (sse/EXE+JAR/*). Requires JVM.
+Download JAR or EXE file (sne/EXE+JAR/*). Requires JVM.
 
 # LICENSE
 
