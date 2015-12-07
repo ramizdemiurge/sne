@@ -3,7 +3,7 @@ package meta.morphosis.frames;
  * 
  * @author metamorphosis (meta++)
  * @author Ramiz Abdullayev
- * @version 1.0.0.0
+ * @version 1.2.0.0
  * https://github.com/metaplusplus/sse
  * 
  * 
@@ -51,16 +51,18 @@ import javax.swing.border.EtchedBorder;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
-import java.awt.TextArea;
-import javax.swing.JTextPane;
-import javax.swing.JScrollBar;
-import javax.swing.JList;
-import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 
 
 
 public class MFrame extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8803084889134626469L;
+	/**
+	 * 
+	 */
 	private JTextField txtMetamorphosis;
 	private JTextField textField_md5;
 	private JTextField textField_base64;
@@ -98,7 +100,7 @@ public class MFrame extends JFrame {
 		getContentPane().setBackground(new Color(235, 235, 235));
 		//getContentPane().setBackground(UIManager.getColor("Button.highlight"));
 		setResizable(false);
-		setTitle("SSE - Super Simple Encoder");
+		setTitle("SNE - Simple Nuclear Encoder");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(MFrame.class.getResource("/meta/morphosis/img/logo_80x80.gif")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//LOOK! WATCH IT! 

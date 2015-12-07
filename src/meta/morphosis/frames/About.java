@@ -4,7 +4,7 @@ package meta.morphosis.frames;
  * About.java - about frame
  * @author metamorphosis (meta++)
  * @author Ramiz Abdullayev
- * @version 1.0.0.0
+ * @version 1.2.0.0
  * https://github.com/metaplusplus/sse
  * 
  * Copyright 2015 Ramiz Abdullayev
@@ -72,7 +72,7 @@ public class About extends JFrame {
 	 */
 	public About() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(About.class.getResource("/meta/morphosis/img/logo_80x80.gif")));
-		setTitle("About Super Simple Encoder");
+		setTitle("About Simple Nuclear Encoder");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 411, 200);
@@ -95,7 +95,7 @@ public class About extends JFrame {
 		label.setBounds(15, 12, 80, 80);
 		panel.add(label);
 		
-		JLabel lblSuperSimpleEncoder = new JLabel("Super Simple Encoder");
+		JLabel lblSuperSimpleEncoder = new JLabel("Simple Nuclear Encoder");
 		lblSuperSimpleEncoder.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblSuperSimpleEncoder.setHorizontalAlignment(SwingConstants.CENTER);
 		lblSuperSimpleEncoder.setBounds(105, 12, 266, 23);

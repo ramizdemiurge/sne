@@ -3,7 +3,7 @@ package meta.morphosis.frames;
  * 
  * @author metamorphosis (meta++)
  * @author Ramiz Abdullayev
- * @version 1.0.0.0
+ * @version 1.2.0.0
  * https://github.com/metaplusplus/sse
  * 
  * Copyright 2015 Ramiz Abdullayev
@@ -97,7 +97,7 @@ public class UpdateFrame extends JDialog {
 			lblNewVersion.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		}
 		
-		JLabel lblNewVersionOf = new JLabel("New version of SSE are available");
+		JLabel lblNewVersionOf = new JLabel("New version of SNE are available");
 		lblNewVersionOf.setBounds(144, 11, 258, 14);
 		panel.add(lblNewVersionOf);
 		lblNewVersionOf.setFont(new Font("Tahoma", Font.BOLD, 12));
@@ -114,7 +114,7 @@ public class UpdateFrame extends JDialog {
 		txtHttpsgithubcommetaplusplusssetreemasterexejar.setToolTipText("Download URL");
 		txtHttpsgithubcommetaplusplusssetreemasterexejar.setBounds(144, 92, 258, 20);
 		panel.add(txtHttpsgithubcommetaplusplusssetreemasterexejar);
-		txtHttpsgithubcommetaplusplusssetreemasterexejar.setText("https://github.com/metaplusplus/sse/tree/master/EXE+JAR");
+		txtHttpsgithubcommetaplusplusssetreemasterexejar.setText("https://github.com/metaplusplus/sne/tree/master/EXE+JAR");
 		txtHttpsgithubcommetaplusplusssetreemasterexejar.setColumns(10);
 		{
 			JPanel buttonPane = new JPanel();

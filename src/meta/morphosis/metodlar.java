@@ -3,8 +3,8 @@ package meta.morphosis;
  * 
  * @author metamorphosis (meta++)
  * @author Ramiz Abdullayev
- * @version 1.0.0.0
- * https://github.com/metaplusplus/sse
+ * @version 1.2.0.0
+ * https://github.com/metaplusplus/sne
  * 
  * Copyright 2015 Ramiz Abdullayev
  *
@@ -26,7 +26,7 @@ package meta.morphosis;
  */
 public class metodlar 
 {
-	private static final String version = "1.1.0.0";
+	private static final String version = "1.2.0.0";
 	private static final String author = "Ramiz Abdullayev :: metamorphosis (meta++)";
 	
 	

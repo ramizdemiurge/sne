@@ -3,7 +3,7 @@ package meta.morphosis.frames;
  * 
  * @author metamorphosis (meta++)
  * @author Ramiz Abdullayev
- * @version 1.0.0.0
+ * @version 1.2.0.0
  * https://github.com/metaplusplus/sse
  * 
  * 

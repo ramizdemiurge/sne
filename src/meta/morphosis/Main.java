@@ -4,8 +4,8 @@ import meta.morphosis.UpdateNotClass.Updater;
  * 
  * @author metamorphosis (meta++)
  * @author Ramiz Abdullayev
- * @version 1.0.0.0
- * https://github.com/metaplusplus/sse
+ * @version 1.2.0.0
+ * https://github.com/metaplusplus/sne
  * 
  * Copyright 2015 Ramiz Abdullayev
  *

@@ -10,8 +10,8 @@ import java.util.Objects;
  * 
  * @author metamorphosis (meta++)
  * @author Ramiz Abdullayev
- * @version 1.0.0.0
- * https://github.com/metaplusplus/sse
+ * @version 1.2.0.0
+ * https://github.com/metaplusplus/sne
  * 
  * Copyright 2015 Ramiz Abdullayev
  *
@@ -40,7 +40,7 @@ public class UpdateNotClass {
 		{
 			try
 			{
-	        URLConnection connection = new URL("https://raw.githubusercontent.com/metaplusplus/sse/master/VERSION").openConnection();
+	        URLConnection connection = new URL("https://raw.githubusercontent.com/metaplusplus/sne/master/VERSION").openConnection();
 	        InputStream is = connection.getInputStream();
 	        InputStreamReader reader = new InputStreamReader(is);
 	        char[] buffer = new char[256];
