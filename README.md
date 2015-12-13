@@ -1,6 +1,6 @@
 # INFO
 Simple Nuclear Encoder - md5, md2, sha1, base64...
-
+<img></img>
 #DISCLAIMER
 
 I, Ramiz A. (meta++), am not responsible for how you use this tool. This tool is released for educational purposes only, and comes with no warranty at all.
