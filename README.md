@@ -5,11 +5,16 @@ https://raw.githubusercontent.com/metaplusplus/sne/master/SNE_LINUX_Screenshot.J
 
 #DISCLAIMER
 
-I, Ramiz A. (meta++), am not responsible for how you use this tool. This tool is released for educational purposes only, and comes with no warranty at all.
+This tool is released for educational purposes only, and comes with no warranty at all.
 
 # HOW TO RUN ON WINDOWS, LINUX or MACOS
 
-Download JAR or EXE file (sne/EXE+JAR/*). Requires JVM.
+Download and run JAR file (sne/Jar/*). Requires JVM.
+java -jar [PATH_TO_FILE]
+
+OR
+
+Open this project in Intellij IDEA and run.
 
 # LICENSE
 
