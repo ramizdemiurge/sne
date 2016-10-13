@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sne_intellij:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sne_intellij_jar</output-path>
+    <root id="archive" name="sne_intellij.jar">
+      <element id="module-output" name="sne_intellij" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jgoodies-forms-1.8.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
