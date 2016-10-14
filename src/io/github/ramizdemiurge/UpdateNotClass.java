@@ -52,14 +52,15 @@ class UpdateNotClass {
 	        //JOptionPane.showMessageDialog(null, "Download new version "+sb.toString()+" from github page!");
 	        	try {
 	        		sleep(600);
-	        	}catch (InterruptedException iex) {}
+	        	}catch (InterruptedException ignored) {}
+				System.out.println("Updater: There is a new version: "+sb);
 				io.github.ramizdemiurge.frames.UpdateFrame.main(sb.toString());
 	        }
 
 	        //------------
 			}
 			catch(Exception asdasd)
-			{System.out.println("Error with connection to server.");}
+			{System.out.println("Updater: Error with the connection to the server.");}
 
 		}
 
