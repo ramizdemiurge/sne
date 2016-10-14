@@ -52,6 +52,10 @@ public class Splashframe
         window.dispose();
         MFrame.main(null);
     }
+    public void make(int msec)
+    {
+        main(msec);
+    }
 
 
 }

@@ -36,7 +36,7 @@ import java.net.URISyntaxException;
 public class UpdateFrame extends JDialog {
 	private static final long serialVersionUID = 6573669488100183241L;
 
-	public static String newv;
+	private static String newv;
 
 	private final JPanel contentPanel = new JPanel();
 	private JTextField txtHttpsgithubcommetaplusplusssetreemasterexejar;
@@ -58,7 +58,7 @@ public class UpdateFrame extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public UpdateFrame() {
+	private UpdateFrame() {
 		setAutoRequestFocus(false);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		setTitle("Update notifier");
@@ -106,7 +106,7 @@ public class UpdateFrame extends JDialog {
 		txtHttpsgithubcommetaplusplusssetreemasterexejar.setToolTipText("Download URL");
 		txtHttpsgithubcommetaplusplusssetreemasterexejar.setBounds(144, 92, 258, 20);
 		panel.add(txtHttpsgithubcommetaplusplusssetreemasterexejar);
-		txtHttpsgithubcommetaplusplusssetreemasterexejar.setText("https://ramizdemiurge.github.io/sne/");
+		txtHttpsgithubcommetaplusplusssetreemasterexejar.setText("http://ramizdemiurge.github.io/sne");
 		txtHttpsgithubcommetaplusplusssetreemasterexejar.setColumns(10);
 		{
 			JPanel buttonPane = new JPanel();
@@ -120,7 +120,7 @@ public class UpdateFrame extends JDialog {
 						java.net.URL url = null;
 						try
 						{
-							url = new java.net.URL("https://ramizdemiurge.github.io/sne/");
+							url = new java.net.URL("http://ramizdemiurge.github.io/sne");
 						} catch (MalformedURLException e1)
 						{
 							e1.printStackTrace();

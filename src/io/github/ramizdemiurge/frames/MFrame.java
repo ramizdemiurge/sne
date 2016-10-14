@@ -115,7 +115,6 @@ public class MFrame extends JFrame {
 		JMenuItem mntmRestart = new JMenuItem("Restart");
 		mntmRestart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
 				dispose();
 				io.github.ramizdemiurge.frames.Splashframe.main(200);
 			}
